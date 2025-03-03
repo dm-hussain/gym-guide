@@ -2,22 +2,17 @@ import React from 'react';
 import Card from './Card';
 import Heading from './Heading';
 
- import tableCost from './../assets/cost-table.png'
- import lowCost from './../assets/low-cost.png'
+import tableCost from './../assets/cost-table.png';
+import lowCost from './../assets/low-cost.png';
 
 function HomePage() {
-
- 
   return (
     <>
       <div className="container">
         <Card>
           <Heading title={'💪 Best Gym Plan for Skinny Guys (Muscle Gain) '} />
           <ul>
-            <li className=" px-5 list-unstyled ">
-              {' '}
-              🔹 Workout Duration: 60–90 minutes per session{' '}
-            </li>
+            <li>🔹 Workout Duration: 60–90 minutes per session </li>
             <li>🔹 Frequency: 4–6 days per week</li>
             <li>🔹 Focus: Heavy lifting + Progressive overload</li>
             <li>🔹 Diet: High-calorie, high-protein meals</li>
@@ -208,35 +203,32 @@ function HomePage() {
             <li>✔ Lift heavy & progressive</li>
             <li>overload (increase weights weekly)</li>
             <li>✔ Avoid junk food, focus on whole foods </li>
-            <li>
-              ✔ Sleep 7–9 hours for recovery 
-            </li>
+            <li>✔ Sleep 7–9 hours for recovery</li>
 
-            <li>🚀 Follow this plan for 3–6 months
-            and see noticeable muscle growth! 💪🔥</li>
+            <li>
+              🚀 Follow this plan for 3–6 months and see noticeable muscle
+              growth! 💪🔥
+            </li>
           </ul>
         </Card>
 
-
-
-
-<h1 className='text-center text-success'>Costing</h1>
-<p className='text-light text-center'>The daily food cost for the muscle gain diet in India depends on where you buy groceries and your location. Below is an estimated breakdown of the cost per day based on common prices in India.</p>
-
+        <h1 className="text-center text-success">Costing</h1>
+        <p className="text-light text-center">
+          The daily food cost for the muscle gain diet in India depends on where
+          you buy groceries and your location. Below is an estimated breakdown
+          of the cost per day based on common prices in India.
+        </p>
 
         {/* Card**************** */}
 
         <Card>
-          <Heading title={' 💰 Estimated Daily Food Cost in India (Muscle Gain Diet)'} />
-
-         <div className='text-center'>
-         <img src={tableCost} alt="cost-table"  
-          className='img-fluid'
+          <Heading
+            title={' 💰 Estimated Daily Food Cost in India (Muscle Gain Diet)'}
           />
-         </div>
 
-         
-
+          <div className="text-center">
+            <img src={tableCost} alt="cost-table" className="img-fluid" />
+          </div>
         </Card>
 
         {/* Card**************** */}
@@ -244,13 +236,10 @@ function HomePage() {
         <Card>
           <Heading title={' 🔥 Total Cost per Day '} />
           <ul>
-            <li>✔ With Chicken & Whey Protein: ₹450–500/day
-            </li>
-            <li>✔ With Paneer (No Whey Protein): ₹350–400/day
-            </li>
-            <li>✔ Vegetarian (No Meat, No Whey): ₹300–350/day
-            </li>
-           </ul>
+            <li>✔ With Chicken & Whey Protein: ₹450–500/day</li>
+            <li>✔ With Paneer (No Whey Protein): ₹350–400/day</li>
+            <li>✔ Vegetarian (No Meat, No Whey): ₹300–350/day</li>
+          </ul>
         </Card>
         {/* Card**************** */}
 
@@ -258,12 +247,8 @@ function HomePage() {
           <Heading title={'📌 Monthly Cost Estimate '} />
 
           <ul>
-            <li>💰 With Chicken & Whey Protein: ₹13,500–15,000/month
-            </li>
-            <li>💰 Vegetarian (No Whey, Paneer/Tofu): ₹9,000–12,000/month
-
-</li>
-          
+            <li>💰 With Chicken & Whey Protein: ₹13,500–15,000/month</li>
+            <li>💰 Vegetarian (No Whey, Paneer/Tofu): ₹9,000–12,000/month</li>
           </ul>
         </Card>
         {/* Card**************** */}
@@ -272,64 +257,58 @@ function HomePage() {
           <Heading title={' 💡 Ways to Reduce Cost:'} />
 
           <ul>
-            <li>✅ Buy eggs, rice, paneer, and milk in bulk
+            <li>✅ Buy eggs, rice, paneer, and milk in bulk</li>
+            <li>
+              ✅ Replace whey with homemade protein shakes (milk, banana, peanut
+              butter, oats)
             </li>
-            <li>✅ Replace whey with homemade protein shakes (milk, banana, peanut butter, oats)
-            </li>
-            <li>✅ Use lentils (dal), soya chunks, and sprouts for protein
-            </li>
-            <li>✅ Buy seasonal fruits & vegetables for lower cost
-
-</li>
+            <li>✅ Use lentils (dal), soya chunks, and sprouts for protein</li>
+            <li>✅ Buy seasonal fruits & vegetables for lower cost</li>
           </ul>
         </Card>
 
-
-
-
         <Card>
-          <Heading title={'💰 Budget-Friendly Muscle Gain Diet Plan (₹200–250/day)  '} />
-
-          <p> If you want to gain muscle on a budget, you can replace expensive items like chicken, paneer, and whey protein with affordable high-protein alternatives like eggs, dal, soya chunks, and homemade protein shakes.
-
-</p>
-
-
-
-<div className='text-center'>
-         <img src={lowCost} alt="low-cost-table"  
-          className='img-fluid'
+          <Heading
+            title={'💰 Budget-Friendly Muscle Gain Diet Plan (₹200–250/day)  '}
           />
-         </div>
 
-         
+          <p>
+            {' '}
+            If you want to gain muscle on a budget, you can replace expensive
+            items like chicken, paneer, and whey protein with affordable
+            high-protein alternatives like eggs, dal, soya chunks, and homemade
+            protein shakes.
+          </p>
+
+          <div className="text-center">
+            <img src={lowCost} alt="low-cost-table" className="img-fluid" />
+          </div>
         </Card>
 
-
-      
         {/* Card**************** */}
 
         <Card>
           <Heading title={'💡 Budget Muscle Gain Tips:'} />
 
           <ul>
-            <li>✅ Replace whey protein with homemade shakes (milk, banana, oats, peanut butter)
-
+            <li>
+              ✅ Replace whey protein with homemade shakes (milk, banana, oats,
+              peanut butter)
             </li>
-            <li>✅ Buy in bulk – Rice, dal, soya chunks, eggs are cheaper in large quantities
-
+            <li>
+              ✅ Buy in bulk – Rice, dal, soya chunks, eggs are cheaper in large
+              quantities
             </li>
-            <li> ✅ Eat local & seasonal foods – Cheaper and nutritious
+            <li> ✅ Eat local & seasonal foods – Cheaper and nutritious</li>
+            <li>✅ Use Soya Chunks, Dal, and Sprouts – Cheap & high-protein</li>
 
+            <li>
+              🚀 Follow this diet + workout for 3–6 months to see solid muscle
+              gain without spending too much! Would you like a homemade mass
+              gainer shake recipe? 🏋️🔥
             </li>
-            <li>✅ Use Soya Chunks, Dal, and Sprouts – Cheap & high-protein
-           </li>
-
-           <li>🚀 Follow this diet + workout for 3–6 months to see solid muscle gain without spending too much! Would you like a homemade mass gainer shake recipe? 🏋️🔥</li>
           </ul>
         </Card>
-
-
       </div>
     </>
   );
